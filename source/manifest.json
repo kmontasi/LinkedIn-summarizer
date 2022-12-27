@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "profile summarizer",
+    "version": "1.0",
+    "description": "summarize LinkedIn profiles",
+    "action":{
+      "default_popup": "index.html"
+    },
+  
+    "icons": {
+    },
+
+    "content_scripts": [
+      {
+        "js": [
+          "scripts/content.js"
+        ],
+        "matches": [
+
+          "https://www.linkedin.com/*",
+          "https://developer.chrome.com/docs/extensions/*",
+          "https://developer.chrome.com/docs/webstore/*"
+        ]
+      }
+    ]
+  }
